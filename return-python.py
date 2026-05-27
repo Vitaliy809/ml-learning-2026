@@ -39,27 +39,61 @@
 # print(is_prime(9))   # False
 
 
-def is_prime(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     for i in range(2, int(n**0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
 
-def fizzbuzz_prime(n):
-    for i in range(1, n + 1):       # перебираємо всі числа
-        if i % 3 == 0 and i % 5 == 0:
-            print("FizzBuzz")
-        elif i % 3 == 0:
-            print("Fizz")
-        elif i % 5 == 0:
-            print("Buzz")
-        elif is_prime(i):            # is_prime — окрема функція
-            print("Prime")
-        else:
-            print(i)
+# def fizzbuzz_prime(n):
+#     for i in range(1, n + 1):       # перебираємо всі числа
+#         if i % 3 == 0 and i % 5 == 0:
+#             print("FizzBuzz")
+#         elif i % 3 == 0:
+#             print("Fizz")
+#         elif i % 5 == 0:
+#             print("Buzz")
+#         elif is_prime(i):            # is_prime — окрема функція
+#             print("Prime")
+#         else:
+#             print(i)
 
-n = int(input("Введіть число: "))
-fizzbuzz_prime(n)
+# n = int(input("Введіть число: "))
+# fizzbuzz_prime(n)
 
+
+
+# numbers = [3, 7, 2, 9, 1, 5]
+# max_number = 0
+
+# for i in numbers:
+   
+#     if i > max_number:
+#         max_number = i
+
+# print(max_number)
+
+
+# numbers = [1, 2, 3, 4, 5]
+
+# new_list = []
+# for i in range(len(numbers) - 1, -1, -1):
+#     new_list.append(numbers[i])  
+
+# print(new_list)
+
+numbers = [1, 2, 2, 3, 1, 4, 3]
+new_list = []
+for i in numbers:
+    if i not in new_list:
+        new_list.append(i)
+print(new_list)
+
+
+
+
+
+   
+    
