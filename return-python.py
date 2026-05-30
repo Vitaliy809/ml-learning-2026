@@ -84,16 +84,45 @@
 
 # print(new_list)
 
-numbers = [1, 2, 2, 3, 1, 4, 3]
-new_list = []
-for i in numbers:
-    if i not in new_list:
-        new_list.append(i)
-print(new_list)
+# numbers = [1, 2, 2, 3, 1, 4, 3]
+# new_list = []
+# for i in numbers:
+#     if i not in new_list:
+#         new_list.append(i)
+# print(new_list)
 
 
-
+# numbers = [3, 7, 2, 9, 1, 5]
+# sum_numbers = 0
+# average_numbers = 0
+# count = 0
+# for i in numbers:
+#     sum_numbers += i
+#     count += 1
+#     average_numbers = sum_numbers / count
+    
+    
+# print(average_numbers)
 
 
    
     
+numbers = [3, 7, 2, 9, 1, 5]
+max_numbers = 0
+
+
+for i in numbers:
+    if max_numbers < i:
+        max_numbers = i
+
+second_max = 0
+for i in numbers:
+    if i != max_numbers and i > second_max:
+        second_max = i
+print(second_max)
+
+
+
+    
+
+
