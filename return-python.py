@@ -121,21 +121,41 @@
 #         second_max = i
 # print(second_max)
 
-word_enter = input("Enter word is Palindrom: ")
+# word_enter = input("Enter word is Palindrom: ")
 
-def palindrom_check(word):
-    reversed_list = []
-    for i in range(len(word) - 1, -1, -1):
-        reversed_list.append(word[i])
+# def palindrom_check(word):
+#     reversed_list = []
+#     for i in range(len(word) - 1, -1, -1):
+#         reversed_list.append(word[i])
     
-    reversed_word = "".join(reversed_list)
-    return reversed_word == word  # True або False
+#     reversed_word = "".join(reversed_list)
+#     return reversed_word == word  # True або False
 
-print(palindrom_check(word_enter))
+# print(palindrom_check(word_enter))
     
 
 
+# grades = [5, 3, 4, 5, 2, 3, 5, 4, 3, 2]
 
-    
+# grades_student = {}
+
+# for i in grades: 
+#     if i not in grades_student:
+#         grades_student[i] = 1
+#     else:
+#         grades_student[i] += 1
+
+# print(grades_student)
+
+
+data = {"a": 1, "b": 2, "c": 3}    
+new_data = {}
+
+for key, value in data.items():
+    new_data[value] = key
+
+
+print(new_data)
+
 
 
