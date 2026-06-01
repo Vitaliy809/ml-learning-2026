@@ -107,19 +107,32 @@
 
    
     
-numbers = [3, 7, 2, 9, 1, 5]
-max_numbers = 0
+# numbers = [3, 7, 2, 9, 1, 5]
+# max_numbers = 0
 
 
-for i in numbers:
-    if max_numbers < i:
-        max_numbers = i
+# for i in numbers:
+#     if max_numbers < i:
+#         max_numbers = i
 
-second_max = 0
-for i in numbers:
-    if i != max_numbers and i > second_max:
-        second_max = i
-print(second_max)
+# second_max = 0
+# for i in numbers:
+#     if i != max_numbers and i > second_max:
+#         second_max = i
+# print(second_max)
+
+word_enter = input("Enter word is Palindrom: ")
+
+def palindrom_check(word):
+    reversed_list = []
+    for i in range(len(word) - 1, -1, -1):
+        reversed_list.append(word[i])
+    
+    reversed_word = "".join(reversed_list)
+    return reversed_word == word  # True або False
+
+print(palindrom_check(word_enter))
+    
 
 
 
