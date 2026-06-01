@@ -148,14 +148,42 @@
 # print(grades_student)
 
 
-data = {"a": 1, "b": 2, "c": 3}    
-new_data = {}
+# data = {"a": 1, "b": 2, "c": 3}    
+# new_data = {}
 
-for key, value in data.items():
-    new_data[value] = key
+# for key, value in data.items():
+#     new_data[value] = key
 
 
-print(new_data)
+# print(new_data)
 
+
+text = "apple banana apple orange banana apple"
+
+count_word = {}
+popular_word = ""
+max_count = 0
+
+
+for i in text.split():
+    if i not in count_word:
+        count_word[i] = 1
+    else:
+        count_word[i] += 1
+
+for key, value in count_word.items():
+    if value > max_count:
+        max_count = value
+        popular_word = key
+
+print(popular_word)
+
+
+
+
+        
+
+
+    
 
 
