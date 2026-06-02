@@ -158,27 +158,60 @@
 # print(new_data)
 
 
-text = "apple banana apple orange banana apple"
+# text = "apple banana apple orange banana apple"
 
-count_word = {}
-popular_word = ""
-max_count = 0
-
-
-for i in text.split():
-    if i not in count_word:
-        count_word[i] = 1
-    else:
-        count_word[i] += 1
-
-for key, value in count_word.items():
-    if value > max_count:
-        max_count = value
-        popular_word = key
-
-print(popular_word)
+# count_word = {}
+# popular_word = ""
+# max_count = 0
 
 
+# for i in text.split():
+#     if i not in count_word:
+#         count_word[i] = 1
+#     else:
+#         count_word[i] += 1
+
+# for key, value in count_word.items():
+#     if value > max_count:
+#         max_count = value
+#         popular_word = key
+
+# print(popular_word)
+
+
+numbers = [3, 7, 2, 9, 1, 5]
+
+
+def get_min(numbers):
+    result = numbers[0]
+    for i in numbers:
+        if i < result:
+            result = i
+    return result
+
+
+
+def get_max(numbers):
+    result = numbers[0]
+    for i in numbers:
+        if i > result:
+            result = i
+    return result
+            
+
+def get_range(numbers):
+    range_element = get_max(numbers) - get_min(numbers)
+    return range_element
+
+print(get_min(numbers))
+print(get_max(numbers))
+print(get_range(numbers))
+
+
+
+
+        
+    
 
 
         
