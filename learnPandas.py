@@ -41,8 +41,10 @@ df = pd.DataFrame(data)
 
 df["passed"] = df["grade"] >= 75
 print(df[df["passed"] == True])
+
 passed_df = df[df["passed"] == True]
 print(passed_df.groupby("city")["grade"].mean())
+
 df = df.sort_values("grade", ascending=False)  # ← "grade" без "s"
 print(df.head(3))
 print(passed_df.groupby("city")["name"].count())
