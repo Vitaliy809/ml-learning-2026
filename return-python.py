@@ -208,7 +208,68 @@
 # print(get_range(numbers))
 
 
+# word = input("Введи слово: ")
+# word2= input("Введи слово анаграму до першого: ")
 
+# def anagram(word, word1):
+#     word_anagram1 = []
+#     word_anagram2 = []
+#     for i in word:
+#         word_anagram1.append(i)
+#     for i in word2:
+#         word_anagram2.append(i)
+#     anagram_boolean = sorted(word_anagram1) == sorted(word_anagram2)
+#     if anagram_boolean == True:
+#         return "це анаграма"
+#     else:
+#         return "це не анаграма"
+
+# print(anagram(word,word2))
+
+
+# def anagram(word, word1):
+#     return sorted(word) == sorted(word1)
+
+
+class Stack:
+    def __init__(self):
+        self.data = []
+
+    def push(self, item):
+        self.data.append(item)
+    
+    def pop(self):
+        return self.data.pop()
+
+    def peek(self):
+        return self.data[-1]
+
+    def is_empty(self):   
+        return len(self.data) == 0  
+    def size(self):
+        return len(self.data)
+    
+s = Stack()
+s.push(1)
+s.push(2)
+s.push(3)
+print(s.pop()) 
+print(s.peek())  
+print(s.size())  
+
+
+        
+
+    
+
+    
+
+
+    
+
+        
+
+    
 
         
     
