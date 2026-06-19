@@ -79,13 +79,13 @@ import pandas as pd
 # print(df["grade"].fillna(df["grade"].median()))
 # print(df.dropna())
 
-data = pd.DataFrame({
-    "name": ["Віталік", "Аня", "Олег", "Катя", "Дмитро", "Соня"],
-    "city": ["Львів", "Київ", "Львів", "Харків", "Київ", "Львів"],
-    "subject": ["Math", "Math", "Python", "Python", "Math", "Python"],
-    "grade": [95, 88, 72, 91, 65, 84]
-})
-df = pd.DataFrame(data)
+# data = pd.DataFrame({
+#     "name": ["Віталік", "Аня", "Олег", "Катя", "Дмитро", "Соня"],
+#     "city": ["Львів", "Київ", "Львів", "Харків", "Київ", "Львів"],
+#     "subject": ["Math", "Math", "Python", "Python", "Math", "Python"],
+#     "grade": [95, 88, 72, 91, 65, 84]
+# })
+# df = pd.DataFrame(data)
 
-print(pd.pivot_table(df, values="grade", index="subject", columns="city", aggfunc="mean"))
+# print(pd.pivot_table(df, values="grade", index="subject", columns="city", aggfunc="mean"))
 # print(pd.pivot_table(df, values="grade", index="city",aggfunc="max"))
